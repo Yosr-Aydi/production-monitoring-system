@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-U56S90R.KomaxData.sa"
+  DTS:DTSID="{DE8AD0BD-83BE-4DFE-9D99-DEC5D071DBAE}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-U56S90R;User ID=sa;Initial Catalog=KomaxData;Provider=SQLOLEDB.1;Application Name=SSIS-DWHKomax-{DE8AD0BD-83BE-4DFE-9D99-DEC5D071DBAE}DESKTOP-U56S90R.KomaxData.sa;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtnSDdoCEZEK2uQHZIujlqgAAAAACAAAAAAAQZgAAAAEAACAAAABTl0et3ON3iFvdnc1NKUI7dPOlbLSrhoREhk8fPuDYcgAAAAAOgAAAAAIAACAAAACW0XkwOGpXukXp1kZ5rvRj3xDgG5tbMU60ruN00XZjbHAAAADWLvPsUhR3EDEhJC98lCUWy8sV1MCweSpWDKhu0/SHxCN8+ZoN/pONjqBeW3Q5O9EJ73xmJhOJGWJ92kFqsZ5gBSYE3ANlIIk8fZEwoW+DGZylTPgIijE8hThPvROU+o6HYZSaeoJw1EdTJwmlp3xXQAAAAB/NiVXmiQTDBOEparFHpee0doG5ix/aqlI8jcI8y9RiVwWP/kQNyqSqz0AOfAqzzvuPN4hA2zfBCMpKBb5WeTI=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

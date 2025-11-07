@@ -1,0 +1,1917 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/14/2024 2:22:06 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-U56S90R"
+  DTS:CreatorName="DESKTOP-U56S90R\user"
+  DTS:DTSID="{84E80DC5-CC23-4BDB-9BF1-E609E9E8A482}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="8192"
+  DTS:ObjectName="BESOIN_OF_H_DATA_TABLE"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{B27DDE02-A493-4F08-8A0C-6CFF0FDBDED1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-U56S90R.KomaxData.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{050D4186-BA7D-4C26-B755-94EA275FF233}"
+      DTS:ObjectName="DESKTOP-U56S90R.KomaxData.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-U56S90R;User ID=sa;Initial Catalog=KomaxData;Provider=SQLOLEDB.1;Application Name=SSIS-Package-{050D4186-BA7D-4C26-B755-94EA275FF233}DESKTOP-U56S90R.KomaxData.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtnSDdoCEZEK2uQHZIujlqgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADL3UGgtHKS/5HrqygEyxNE/2m5EkEaM0vXv4MNnjTS3gAAAAAOgAAAAAIAACAAAABJSkqB08fvxf4uRKO5UwdB6LeC4cwstvay+Jt8rYb/pxAAAAB8G58JU76Ed5GOPJUXVzB9QAAAANdEAeXrKn9hH0TgM5gX2sj+n7w54kydcSuGQqI4stQ0t51lb0KGsuAMDoV6/9Y2zM6HkAO9f/ajiqKx6NK9ijc</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B9E2F0D7-DCA0-48E6-99CF-9C88B1EF574B}"
+      DTS:ObjectName="Gestionnaire de connexions de fichiers plats">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="8192"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\user\Desktop\developer\sqldeveloper\sqldeveloper\bin\BESOIN_OF_H_DATA_TABLE.tsv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_ORFA_NUMERO&quot;"
+              DTS:DTSID="{A50EEDFF-5847-4B0B-93F7-CB0312C08DF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_NOME_LIGNE&quot;"
+              DTS:DTSID="{61548E1C-BB1D-4CCD-851F-51CCFAB6984B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_POSITION&quot;"
+              DTS:DTSID="{A7366F1D-1EB3-44D2-8C89-8C1B43E88CF2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_ARTI_CODE_FI_01&quot;"
+              DTS:DTSID="{74CF4AED-DC9B-4C5B-85F7-F8C882EFF8AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_ARTI_CODE_CT_01&quot;"
+              DTS:DTSID="{AF80B914-9737-4862-A35D-583845E6ACD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_ARTI_CODE_CT_02&quot;"
+              DTS:DTSID="{4DCD1FDA-4268-497E-B370-40E133DEB79A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_ARTI_CODE_GO_01&quot;"
+              DTS:DTSID="{92EF82C9-D3E3-4543-B08D-2BDD160590D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_ARTI_CODE_GO_02&quot;"
+              DTS:DTSID="{BA6AF9CE-D4C3-4FF1-905C-704F64460764}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_DENUDAGE_01&quot;"
+              DTS:DTSID="{3BA16ED7-EB39-40F5-BCDB-353C9F3AE725}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_DENUDAGE_02&quot;"
+              DTS:DTSID="{E2596176-C260-427B-850B-483147B71836}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_DEGAINAGE_01&quot;"
+              DTS:DTSID="{59E914C2-9E70-439E-BD95-B23BD6D1F169}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_DEGAINAGE_02&quot;"
+              DTS:DTSID="{24FDB7CE-31E5-4BDF-B185-4981DD15DAF1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_AUTO_MANU_01&quot;"
+              DTS:DTSID="{3F7EED35-D376-4E38-BA64-4772755C6AC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_AUTO_MANU_02&quot;"
+              DTS:DTSID="{6CAD01EE-F368-4609-A9D9-38641F90BFB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_EQPT_CODE&quot;"
+              DTS:DTSID="{E443F8F4-97A9-4A77-81E0-3F070E2C0C78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_MARQUAGE&quot;"
+              DTS:DTSID="{D90E1766-5032-44B6-BAF0-BBF3C755DEF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_COEFFICIENT_FI_01&quot;"
+              DTS:DTSID="{7B1A96E0-0FB3-4218-9943-1D1FC7407D8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_COEFFICIENT_CT_01&quot;"
+              DTS:DTSID="{9072647B-2B2D-4B1C-97D8-1E0107180356}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_COEFFICIENT_CT_02&quot;"
+              DTS:DTSID="{6323BFFE-0579-4767-B112-CA9895BDD923}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_COULEUR_FI_01&quot;"
+              DTS:DTSID="{07FBAD95-485E-47BD-BB30-2B6C84AC93C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_STATUT&quot;"
+              DTS:DTSID="{9E7A49CD-A978-4ACD-BCD0-3B8D837CD822}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_QTE_BONNE_UE&quot;"
+              DTS:DTSID="{570C2B79-769F-49A9-BE55-A5ECDD1B7096}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_QTE_REBUT_UE&quot;"
+              DTS:DTSID="{D0D61C07-8C2F-4D8B-BAA1-3951C1119596}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;DT_CRE&quot;"
+              DTS:DTSID="{78AA47AA-E166-4A74-863D-27182BA64AAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;LOGIN_CRE&quot;"
+              DTS:DTSID="{400507A1-2300-49E4-A729-5B78E31F8042}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;DT_MAJ&quot;"
+              DTS:DTSID="{F8BC7AAD-B28E-45F9-9F16-4D73F2AB0CC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;LOGIN_MAJ&quot;"
+              DTS:DTSID="{16A8B995-918E-4A1E-886D-CF678CAB929E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_PRE_DENUDAGE_01&quot;"
+              DTS:DTSID="{F3905811-24EA-47FA-AAF2-A87E1F3F997C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_PRE_DENUDAGE_02&quot;"
+              DTS:DTSID="{8C0CEA21-13AA-45F5-A89A-F33656689955}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_ORDRE&quot;"
+              DTS:DTSID="{721139E2-F1D5-475C-9F39-B47B78C3B8B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;BOFH_QTE_A_PRODUIRE&quot;"
+              DTS:DTSID="{1F8CA691-5A28-4F5E-8B1F-0EF4D85D1E69}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{0E18804E-955C-448C-A2F6-096AACF0795D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Charger la table BESOIN_OF_H_DATA_TABLE"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+              description="Destination OLE DB"
+              name="BESOIN_OF_H_DATA_TABLE"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[BESOIN_OF_H_DATA_TABLE]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-U56S90R.KomaxData.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-U56S90R.KomaxData.sa]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_ORFA_NUMERO&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_ORFA_NUMERO&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ORFA_NUMERO&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ORFA_NUMERO&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_NOME_LIGNE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_NOME_LIGNE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_NOME_LIGNE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_NOME_LIGNE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_POSITION&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_POSITION&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_POSITION&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_POSITION&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_ARTI_CODE_FI_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_ARTI_CODE_FI_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_FI_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_FI_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_ARTI_CODE_CT_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_ARTI_CODE_CT_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_CT_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_ARTI_CODE_CT_02&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_ARTI_CODE_CT_02&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_02&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_CT_02&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_ARTI_CODE_GO_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_ARTI_CODE_GO_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_GO_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_ARTI_CODE_GO_02&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_ARTI_CODE_GO_02&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_02&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_GO_02&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_DENUDAGE_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_DENUDAGE_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DENUDAGE_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DENUDAGE_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_DENUDAGE_02&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_DENUDAGE_02&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DENUDAGE_02&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DENUDAGE_02&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_DEGAINAGE_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_DEGAINAGE_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DEGAINAGE_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DEGAINAGE_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_DEGAINAGE_02&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_DEGAINAGE_02&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DEGAINAGE_02&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DEGAINAGE_02&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_AUTO_MANU_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_AUTO_MANU_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_AUTO_MANU_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_AUTO_MANU_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_AUTO_MANU_02&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_AUTO_MANU_02&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_AUTO_MANU_02&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_AUTO_MANU_02&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_EQPT_CODE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_EQPT_CODE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_EQPT_CODE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_EQPT_CODE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_MARQUAGE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_MARQUAGE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_MARQUAGE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_MARQUAGE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_COEFFICIENT_FI_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_COEFFICIENT_FI_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COEFFICIENT_FI_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_FI_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_COEFFICIENT_CT_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_COEFFICIENT_CT_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_CT_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_COEFFICIENT_CT_02&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_COEFFICIENT_CT_02&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_02&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_CT_02&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_COULEUR_FI_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_COULEUR_FI_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COULEUR_FI_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COULEUR_FI_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_STATUT&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_STATUT&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_STATUT&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_STATUT&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_QTE_BONNE_UE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_QTE_BONNE_UE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_QTE_BONNE_UE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_BONNE_UE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_QTE_REBUT_UE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_QTE_REBUT_UE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_QTE_REBUT_UE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_REBUT_UE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;DT_CRE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;DT_CRE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;DT_CRE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;DT_CRE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;LOGIN_CRE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;LOGIN_CRE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;LOGIN_CRE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;LOGIN_CRE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;DT_MAJ&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;DT_MAJ&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;DT_MAJ&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;DT_MAJ&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;LOGIN_MAJ&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;LOGIN_MAJ&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;LOGIN_MAJ&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;LOGIN_MAJ&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_PRE_DENUDAGE_01&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_PRE_DENUDAGE_01&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_01&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_PRE_DENUDAGE_01&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_PRE_DENUDAGE_02&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_PRE_DENUDAGE_02&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_02&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_PRE_DENUDAGE_02&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_ORDRE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_ORDRE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ORDRE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ORDRE&quot;]" />
+                    <inputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].Columns[&quot;BOFH_QTE_A_PRODUIRE&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;BOFH_QTE_A_PRODUIRE&quot;"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_QTE_A_PRODUIRE&quot;]"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_A_PRODUIRE&quot;]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ORFA_NUMERO&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ORFA_NUMERO&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_NOME_LIGNE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_NOME_LIGNE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_POSITION&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_POSITION&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_FI_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_CT_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_CT_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_GO_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_GO_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DENUDAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DENUDAGE_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DENUDAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DENUDAGE_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DEGAINAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DEGAINAGE_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_DEGAINAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DEGAINAGE_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_AUTO_MANU_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_AUTO_MANU_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_AUTO_MANU_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_AUTO_MANU_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_EQPT_CODE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_EQPT_CODE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_MARQUAGE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_MARQUAGE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COEFFICIENT_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COEFFICIENT_FI_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COEFFICIENT_CT_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COEFFICIENT_CT_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_COULEUR_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COULEUR_FI_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_STATUT&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_STATUT&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_QTE_BONNE_UE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_QTE_BONNE_UE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_QTE_REBUT_UE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_QTE_REBUT_UE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;DT_CRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;DT_CRE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;LOGIN_CRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;LOGIN_CRE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;DT_MAJ&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;DT_MAJ&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;LOGIN_MAJ&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;LOGIN_MAJ&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_PRE_DENUDAGE_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_PRE_DENUDAGE_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_ORDRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ORDRE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB].ExternalColumns[&quot;BOFH_QTE_A_PRODUIRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_QTE_A_PRODUIRE&quot;" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Outputs[Sortie d'erreur de destination OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination OLE DB"
+                  synchronousInputId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="8192"
+              name="BESOIN_OF_H_DATA_TABLEtsv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ORFA_NUMERO&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ORFA_NUMERO&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ORFA_NUMERO&quot;]"
+                      name="&quot;BOFH_ORFA_NUMERO&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_NOME_LIGNE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_NOME_LIGNE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_NOME_LIGNE&quot;]"
+                      name="&quot;BOFH_NOME_LIGNE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_POSITION&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_POSITION&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_POSITION&quot;]"
+                      name="&quot;BOFH_POSITION&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_FI_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_FI_01&quot;]"
+                      name="&quot;BOFH_ARTI_CODE_FI_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_CT_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_CT_01&quot;]"
+                      name="&quot;BOFH_ARTI_CODE_CT_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_CT_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_02&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_CT_02&quot;]"
+                      name="&quot;BOFH_ARTI_CODE_CT_02&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_GO_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_GO_01&quot;]"
+                      name="&quot;BOFH_ARTI_CODE_GO_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_GO_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_02&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ARTI_CODE_GO_02&quot;]"
+                      name="&quot;BOFH_ARTI_CODE_GO_02&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DENUDAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DENUDAGE_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DENUDAGE_01&quot;]"
+                      name="&quot;BOFH_DENUDAGE_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DENUDAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DENUDAGE_02&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DENUDAGE_02&quot;]"
+                      name="&quot;BOFH_DENUDAGE_02&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DEGAINAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DEGAINAGE_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DEGAINAGE_01&quot;]"
+                      name="&quot;BOFH_DEGAINAGE_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DEGAINAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DEGAINAGE_02&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_DEGAINAGE_02&quot;]"
+                      name="&quot;BOFH_DEGAINAGE_02&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_AUTO_MANU_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_AUTO_MANU_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_AUTO_MANU_01&quot;]"
+                      name="&quot;BOFH_AUTO_MANU_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_AUTO_MANU_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_AUTO_MANU_02&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_AUTO_MANU_02&quot;]"
+                      name="&quot;BOFH_AUTO_MANU_02&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_EQPT_CODE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_EQPT_CODE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_EQPT_CODE&quot;]"
+                      name="&quot;BOFH_EQPT_CODE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_MARQUAGE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_MARQUAGE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_MARQUAGE&quot;]"
+                      name="&quot;BOFH_MARQUAGE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COEFFICIENT_FI_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_FI_01&quot;]"
+                      name="&quot;BOFH_COEFFICIENT_FI_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_CT_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_CT_01&quot;]"
+                      name="&quot;BOFH_COEFFICIENT_CT_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_CT_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_02&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COEFFICIENT_CT_02&quot;]"
+                      name="&quot;BOFH_COEFFICIENT_CT_02&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COULEUR_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COULEUR_FI_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_COULEUR_FI_01&quot;]"
+                      name="&quot;BOFH_COULEUR_FI_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_STATUT&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_STATUT&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_STATUT&quot;]"
+                      name="&quot;BOFH_STATUT&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_BONNE_UE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_QTE_BONNE_UE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_BONNE_UE&quot;]"
+                      name="&quot;BOFH_QTE_BONNE_UE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_REBUT_UE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_QTE_REBUT_UE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_REBUT_UE&quot;]"
+                      name="&quot;BOFH_QTE_REBUT_UE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;DT_CRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;DT_CRE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;DT_CRE&quot;]"
+                      name="&quot;DT_CRE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;LOGIN_CRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;LOGIN_CRE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;LOGIN_CRE&quot;]"
+                      name="&quot;LOGIN_CRE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;DT_MAJ&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;DT_MAJ&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;DT_MAJ&quot;]"
+                      name="&quot;DT_MAJ&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;LOGIN_MAJ&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;LOGIN_MAJ&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;LOGIN_MAJ&quot;]"
+                      name="&quot;LOGIN_MAJ&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_PRE_DENUDAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_01&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_PRE_DENUDAGE_01&quot;]"
+                      name="&quot;BOFH_PRE_DENUDAGE_01&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_PRE_DENUDAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_02&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_PRE_DENUDAGE_02&quot;]"
+                      name="&quot;BOFH_PRE_DENUDAGE_02&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ORDRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ORDRE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_ORDRE&quot;]"
+                      name="&quot;BOFH_ORDRE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_A_PRODUIRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_QTE_A_PRODUIRE&quot;]"
+                      length="50"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].Columns[&quot;BOFH_QTE_A_PRODUIRE&quot;]"
+                      name="&quot;BOFH_QTE_A_PRODUIRE&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ORFA_NUMERO&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ORFA_NUMERO&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_NOME_LIGNE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_NOME_LIGNE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_POSITION&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_POSITION&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_FI_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_CT_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_CT_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_CT_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_GO_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ARTI_CODE_GO_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ARTI_CODE_GO_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DENUDAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DENUDAGE_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DENUDAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DENUDAGE_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DEGAINAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DEGAINAGE_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_DEGAINAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_DEGAINAGE_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_AUTO_MANU_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_AUTO_MANU_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_AUTO_MANU_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_AUTO_MANU_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_EQPT_CODE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_EQPT_CODE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_MARQUAGE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_MARQUAGE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COEFFICIENT_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COEFFICIENT_FI_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COEFFICIENT_CT_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COEFFICIENT_CT_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COEFFICIENT_CT_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_COULEUR_FI_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_COULEUR_FI_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_STATUT&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_STATUT&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_QTE_BONNE_UE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_QTE_BONNE_UE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_QTE_REBUT_UE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_QTE_REBUT_UE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;DT_CRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;DT_CRE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;LOGIN_CRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;LOGIN_CRE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;DT_MAJ&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;DT_MAJ&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;LOGIN_MAJ&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;LOGIN_MAJ&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_01&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_PRE_DENUDAGE_01&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_PRE_DENUDAGE_02&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_PRE_DENUDAGE_02&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_ORDRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_ORDRE&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat].ExternalColumns[&quot;BOFH_QTE_A_PRODUIRE&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;BOFH_QTE_A_PRODUIRE&quot;" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Charger la table BESOIN_OF_H_DATA_TABLE.Paths[Sortie de source de fichier plat]"
+              endId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE.Inputs[Entrée de destination OLE DB]"
+              name="Sortie de source de fichier plat"
+              startId="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="8">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="300,41.6"
+          Id="Package\Charger la table BESOIN_OF_H_DATA_TABLE"
+          TopLeft="65.4999967217447,33.2333331404792" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Charger la table BESOIN_OF_H_DATA_TABLE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="236.8,41.6"
+          Id="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLEtsv"
+          TopLeft="95.5,19.2333338636822" />
+        <NodeLayout
+          Size="223.2,41.6"
+          Id="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE"
+          TopLeft="270.499987160167,115.233332778878" />
+        <EdgeLayout
+          Id="Package\Charger la table BESOIN_OF_H_DATA_TABLE.Paths[Sortie de source de fichier plat]"
+          TopLeft="213.9,60.8333338636822">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="168.199987160167,54.3999989151955"
+              Start="0,0"
+              End="168.199987160167,46.8999989151955">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.1999994575977" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.1999994575977"
+                    Point2="0,27.1999994575977"
+                    Point3="4,27.1999994575977" />
+                  <mssgle:LineSegment
+                    End="164.199987160167,27.1999994575977" />
+                  <mssgle:CubicBezierSegment
+                    Point1="164.199987160167,27.1999994575977"
+                    Point2="168.199987160167,27.1999994575977"
+                    Point3="168.199987160167,31.1999994575977" />
+                  <mssgle:LineSegment
+                    End="168.199987160167,46.8999989151955" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Charger la table BESOIN_OF_H_DATA_TABLE\BESOIN_OF_H_DATA_TABLE">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

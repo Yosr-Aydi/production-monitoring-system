@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-U56S90R.KomaxData"
+  DTS:DTSID="{D7A1AFA7-4DE5-4CB0-8E0C-73BDBDAEDB6F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-U56S90R;Initial Catalog=KomaxData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DWHKomax-{D7A1AFA7-4DE5-4CB0-8E0C-73BDBDAEDB6F}DESKTOP-U56S90R.KomaxData;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
